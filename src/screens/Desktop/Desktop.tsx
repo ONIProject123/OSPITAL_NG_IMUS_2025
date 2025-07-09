@@ -120,7 +120,7 @@ export const Desktop = (): JSX.Element => {
             />
           </div>
 
-          <div className="flex-1 text-center">
+          <div className="flex-1 flex flex-col items-center justify-center">
             <h1 className="font-black text-[#0d07c0] text-[52px] font-['Inter',Helvetica] text-center">
               OSPITAL NG IMUS
             </h1>
