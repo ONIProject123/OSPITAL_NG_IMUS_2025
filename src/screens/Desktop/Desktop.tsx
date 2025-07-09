@@ -97,18 +97,18 @@ export const Desktop = (): JSX.Element => {
           <div className="flex items-center ml-10">
             <img
               className="w-[117px] h-[117px] object-cover"
-              alt="Ph seal imus"
-              src="/ph-seal-imus-1.png"
+              alt="Lungsod ng Imus"
+              src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=117&h=117&fit=crop"
             />
             <img
               className="w-[132px] h-[132px] ml-2 object-cover"
-              alt="Imus logo"
-              src="/20250625-092038-1.png"
+              alt="City of Imus"
+              src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=132&h=132&fit=crop"
             />
             <img
               className="w-[117px] h-[117px] ml-2 object-cover"
-              alt="Hospital logo"
-              src="/20250625-092019-1.png"
+              alt="Ospital ng Imus"
+              src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=117&h=117&fit=crop"
             />
           </div>
 
@@ -140,9 +140,6 @@ export const Desktop = (): JSX.Element => {
             <div className="grid grid-cols-4 gap-6">
               {/* Patient ID */}
               <div className="col-span-1">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Patient's ID No.:
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Patient's ID No."
@@ -154,36 +151,24 @@ export const Desktop = (): JSX.Element => {
 
               {/* Name fields row */}
               <div className="col-span-1">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Lastname:
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Lastname"
                 />
               </div>
               <div className="col-span-1">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Firstname:
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Firstname"
                 />
               </div>
               <div className="col-span-1">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Middlename:
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Middlename"
                 />
               </div>
               <div className="col-span-1">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Suffix: (Optional)
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Suffix"
@@ -192,36 +177,24 @@ export const Desktop = (): JSX.Element => {
 
               {/* Personal details row */}
               <div className="col-span-1">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Age:
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Age"
                 />
               </div>
               <div className="col-span-1">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Sex:
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Sex"
                 />
               </div>
               <div className="col-span-1">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Date of Birth:
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Date of Birth"
                 />
               </div>
               <div className="col-span-1">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Civil Status:
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Civil Status"
@@ -230,18 +203,12 @@ export const Desktop = (): JSX.Element => {
 
               {/* Contact info row */}
               <div className="col-span-2">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  PHIC No.: (Optional)
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="PHIC No."
                 />
               </div>
               <div className="col-span-2">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Contact No.:
-                </label>
                 <Input
                   className="h-[73px] rounded-[10px] border border-solid border-black"
                   placeholder="Contact No."
@@ -250,9 +217,6 @@ export const Desktop = (): JSX.Element => {
 
               {/* Address row */}
               <div className="col-span-4">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Address:
-                </label>
                 <Input
                   className="h-[71px] rounded-[10px] border border-solid border-black"
                   placeholder="Address"
@@ -261,18 +225,12 @@ export const Desktop = (): JSX.Element => {
 
               {/* Emergency contact row */}
               <div className="col-span-2">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Contact Person:
-                </label>
                 <Input
                   className="h-[71px] rounded-[10px] border border-solid border-black"
                   placeholder="Contact Person"
                 />
               </div>
               <div className="col-span-2">
-                <label className="block font-medium text-[#858585] text-2xl mb-2 font-['Inter',Helvetica]">
-                  Contact Person No.:
-                </label>
                 <Input
                   className="h-[71px] rounded-[10px] border border-solid border-black"
                   placeholder="Contact Person No."
