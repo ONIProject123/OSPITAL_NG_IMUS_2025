@@ -83,13 +83,13 @@ export const Desktop = (): JSX.Element => {
   ];
 
   return (
-    <div className="bg-[#2d698f] flex flex-row justify-center w-full min-h-screen">
-      <div className="bg-[#2d698f] overflow-hidden w-full max-w-[1920px] relative">
+    <div className="flex flex-row justify-center w-full min-h-screen relative">
+      <div className="overflow-hidden w-full max-w-[1920px] relative">
         {/* Background image */}
         <img
-          className="absolute w-full h-full top-0 left-0 object-cover"
+          className="absolute w-full h-full top-0 left-0 object-cover opacity-80"
           alt="Hospital building"
-          src="/20250709-084103-1.png"
+          src="/20250709_084103.jpg"
         />
 
         {/* Header */}
