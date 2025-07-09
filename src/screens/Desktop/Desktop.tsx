@@ -125,16 +125,7 @@ export const Desktop = (): JSX.Element => {
         {/* Welcome text */}
         <div className="absolute w-full max-w-[555px] top-[233px] left-1/2 -translate-x-1/2 text-center px-4">
           <h2 className="font-medium text-white text-[48px] xl:text-[64px] font-['Inter',Helvetica]" style={{
-            textShadow: `
-              -2px -2px 0 #000,
-              2px -2px 0 #000,
-              -2px 2px 0 #000,
-              2px 2px 0 #000,
-              -2px 0 0 #000,
-              2px 0 0 #000,
-              0 -2px 0 #000,
-              0 2px 0 #000
-            `
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
           }}>
             Welcome to ONI!
           </h2>
