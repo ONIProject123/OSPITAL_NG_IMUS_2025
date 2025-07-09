@@ -112,8 +112,8 @@ export const Desktop = (): JSX.Element => {
             />
           </div>
 
-          <div className="ml-20 flex-1">
-            <h1 className="font-black text-[#0d07c0] text-[48px] xl:text-[64px] font-['Inter',Helvetica]">
+          <div className="flex-1 text-center">
+            <h1 className="font-black text-[#0d07c0] text-[48px] xl:text-[64px] font-['Inter',Helvetica] text-center">
               OSPITAL NG IMUS
             </h1>
             <p className="font-normal italic text-[#006f07] text-[24px] xl:text-[32px] font-['Libre_Bodoni',Helvetica] text-center">
