@@ -83,17 +83,17 @@ export const Desktop = (): JSX.Element => {
   ];
 
   return (
-    <div className="flex flex-row justify-center w-full min-h-screen relative bg-gray-100">
-      <div className="overflow-hidden w-full min-w-[1280px] max-w-[1920px] relative">
+    <div className="w-full h-screen overflow-hidden relative" style={{ width: '1280px', height: '1920px' }}>
+      <div className="w-full h-full relative">
         {/* Background image */}
         <img
-          className="absolute w-full h-full top-0 left-0 object-cover object-center brightness-75 scale-125 saturate-150"
+          className="absolute w-full h-full top-0 left-0 object-cover object-center"
           alt="Hospital building"
           src="/image copy.png"
         />
 
         {/* Header */}
-        <header className="absolute w-full h-[188px] top-0 left-0 bg-white shadow-[0px_4px_4px_#00000040] opacity-70 flex items-center px-10">
+        <header className="absolute w-full h-[188px] top-0 left-0 bg-white shadow-[0px_4px_4px_#00000040] opacity-70 flex items-center px-8">
           <div className="flex items-center">
             <img
               className="w-[117px] h-[117px] object-cover"
@@ -113,10 +113,10 @@ export const Desktop = (): JSX.Element => {
           </div>
 
           <div className="flex-1 text-center">
-            <h1 className="font-black text-[#0d07c0] text-[48px] xl:text-[64px] font-['Inter',Helvetica] text-center">
+            <h1 className="font-black text-[#0d07c0] text-[52px] font-['Inter',Helvetica] text-center">
               OSPITAL NG IMUS
             </h1>
-            <p className="font-normal italic text-[#006f07] text-[24px] xl:text-[32px] font-['Libre_Bodoni',Helvetica] text-center">
+            <p className="font-normal italic text-[#006f07] text-[28px] font-['Libre_Bodoni',Helvetica] text-center">
               We serve, We Care
             </p>
           </div>
@@ -124,7 +124,7 @@ export const Desktop = (): JSX.Element => {
 
         {/* Welcome text */}
         <div className="absolute w-full top-[233px] left-0 right-0 flex justify-center px-4">
-          <h2 className="font-medium text-white text-[48px] xl:text-[64px] font-['Inter',Helvetica]" style={{
+          <h2 className="font-medium text-white text-[56px] font-['Inter',Helvetica]" style={{
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
           }}>
             Welcome to ONI!
@@ -132,121 +132,121 @@ export const Desktop = (): JSX.Element => {
         </div>
 
         {/* Main form card */}
-        <Card className="absolute w-[95%] max-w-[1512px] min-h-[788px] top-[363px] left-1/2 -translate-x-1/2 bg-white rounded-[20px] shadow-[0px_4px_4px_#00000040] opacity-80">
-          <CardContent className="p-6 xl:p-8">
-            <h3 className="font-medium text-[#858585] text-[24px] xl:text-[32px] font-['Inter',Helvetica] mb-6 xl:mb-8">
+        <Card className="absolute w-[1200px] min-h-[788px] top-[363px] left-1/2 -translate-x-1/2 bg-white rounded-[20px] shadow-[0px_4px_4px_#00000040] opacity-80">
+          <CardContent className="p-8">
+            <h3 className="font-medium text-[#858585] text-[28px] font-['Inter',Helvetica] mb-8">
               Enter your information to check your Patient ID:
             </h3>
 
             {/* Form layout */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-6">
+            <div className="grid grid-cols-4 gap-6">
               {/* Patient ID */}
-              <div className="col-span-1 lg:col-span-1">
+              <div className="col-span-1">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Patient's ID No."
                 />
               </div>
 
               {/* Empty space for layout */}
-              <div className="col-span-1 lg:col-span-3"></div>
+              <div className="col-span-3"></div>
 
               {/* Name fields row */}
-              <div className="col-span-1 lg:col-span-1">
+              <div className="col-span-1">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Lastname"
                 />
               </div>
-              <div className="col-span-1 lg:col-span-1">
+              <div className="col-span-1">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Firstname"
                 />
               </div>
-              <div className="col-span-1 lg:col-span-1">
+              <div className="col-span-1">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Middlename"
                 />
               </div>
-              <div className="col-span-1 lg:col-span-1">
+              <div className="col-span-1">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Suffix"
                 />
               </div>
 
               {/* Personal details row */}
-              <div className="col-span-1 lg:col-span-1">
+              <div className="col-span-1">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Age"
                 />
               </div>
-              <div className="col-span-1 lg:col-span-1">
+              <div className="col-span-1">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Sex"
                 />
               </div>
-              <div className="col-span-1 lg:col-span-1">
+              <div className="col-span-1">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Date of Birth"
                 />
               </div>
-              <div className="col-span-1 lg:col-span-1">
+              <div className="col-span-1">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Civil Status"
                 />
               </div>
 
               {/* Contact info row */}
-              <div className="col-span-2 lg:col-span-2">
+              <div className="col-span-2">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="PHIC No."
                 />
               </div>
-              <div className="col-span-2 lg:col-span-2">
+              <div className="col-span-2">
                 <Input
-                  className="h-[60px] xl:h-[73px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Contact No."
                 />
               </div>
 
               {/* Address row */}
-              <div className="col-span-2 lg:col-span-4">
+              <div className="col-span-4">
                 <Input
-                  className="h-[60px] xl:h-[71px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[71px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Address"
                 />
               </div>
 
               {/* Emergency contact row */}
-              <div className="col-span-2 lg:col-span-2">
+              <div className="col-span-2">
                 <Input
-                  className="h-[60px] xl:h-[71px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[71px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Contact Person"
                 />
               </div>
-              <div className="col-span-2 lg:col-span-2">
+              <div className="col-span-2">
                 <Input
-                  className="h-[60px] xl:h-[71px] rounded-[10px] border border-solid border-black text-sm xl:text-base"
+                  className="h-[71px] rounded-[10px] border border-solid border-black text-base"
                   placeholder="Contact Person No."
                 />
               </div>
 
               {/* Action buttons */}
-              <div className="col-span-1 lg:col-span-1 mt-4">
+              <div className="col-span-1 mt-4">
                 <Button className="w-full h-[56px] xl:h-[68px] bg-[#0f1ca9] rounded-[20px] text-white text-[24px] xl:text-[40px] font-['Konkhmer_Sleokchher',Helvetica]">
                   Search
                 </Button>
               </div>
-              <div className="col-span-0 lg:col-span-2"></div>
-              <div className="col-span-1 lg:col-span-1 mt-4">
+              <div className="col-span-2"></div>
+              <div className="col-span-1 mt-4">
                 <Button className="w-full h-[56px] xl:h-[68px] bg-[#0f914a] rounded-[20px] text-white text-[24px] xl:text-[40px] font-['Konkhmer_Sleokchher',Helvetica]">
                   Set Appointment
                 </Button>
