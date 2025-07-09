@@ -153,7 +153,7 @@ export const Desktop = (): JSX.Element => {
               {/* Patient ID */}
               <div className="col-span-1">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Patient's ID No."
                 />
               </div>
@@ -164,25 +164,25 @@ export const Desktop = (): JSX.Element => {
               {/* Name fields row */}
               <div className="col-span-1">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Lastname"
                 />
               </div>
               <div className="col-span-1">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Firstname"
                 />
               </div>
               <div className="col-span-1">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Middlename"
                 />
               </div>
               <div className="col-span-1">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Suffix"
                 />
               </div>
@@ -190,25 +190,25 @@ export const Desktop = (): JSX.Element => {
               {/* Personal details row */}
               <div className="col-span-1">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Age"
                 />
               </div>
               <div className="col-span-1">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Sex"
                 />
               </div>
               <div className="col-span-1">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Date of Birth"
                 />
               </div>
               <div className="col-span-1">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Civil Status"
                 />
               </div>
@@ -216,13 +216,13 @@ export const Desktop = (): JSX.Element => {
               {/* Contact info row */}
               <div className="col-span-2">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="PHIC No."
                 />
               </div>
               <div className="col-span-2">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Contact No."
                 />
               </div>
@@ -230,7 +230,7 @@ export const Desktop = (): JSX.Element => {
               {/* Address row */}
               <div className="col-span-4">
                 <Input
-                  className="h-[71px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[71px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Address"
                 />
               </div>
@@ -238,13 +238,13 @@ export const Desktop = (): JSX.Element => {
               {/* Emergency contact row */}
               <div className="col-span-2">
                 <Input
-                  className="h-[71px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[71px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Contact Person"
                 />
               </div>
               <div className="col-span-2">
                 <Input
-                  className="h-[71px] rounded-[10px] border border-solid border-black text-base"
+                  className="h-[71px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
                   placeholder="Contact Person No."
                 />
               </div>
@@ -257,7 +257,7 @@ export const Desktop = (): JSX.Element => {
               </div>
               <div className="col-span-2"></div>
               <div className="col-span-1 mt-4">
-                <Button className="w-full h-[56px] xl:h-[68px] bg-[#0f914a] rounded-[20px] text-white text-[24px] xl:text-[40px] font-['Konkhmer_Sleokchher',Helvetica]">
+                <Button className="w-full min-w-[220px] h-auto px-8 py-4 bg-[#0f914a] rounded-[20px] text-white text-[20px] xl:text-[28px] font-['Konkhmer_Sleokchher',Helvetica] flex items-center justify-center whitespace-normal text-center">
                   Set Appointment
                 </Button>
               </div>
