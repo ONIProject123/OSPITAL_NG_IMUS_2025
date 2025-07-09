@@ -89,7 +89,7 @@ export const Desktop = (): JSX.Element => {
         <img
           className="absolute w-full h-full top-0 left-0 object-cover object-center opacity-60 blur-sm brightness-75 scale-125 saturate-150"
           alt="Hospital building"
-          src="/image.png"
+          src="/image copy.png"
         />
 
         {/* Header */}
