@@ -101,26 +101,25 @@ export const Desktop = (): JSX.Element => {
         />
 
         {/* Header */}
-        <header className="absolute w-full h-[188px] top-0 left-0 bg-white shadow-[0px_4px_4px_#00000040] opacity-70 flex items-center px-8" style={{ width: '100vw' }}>
-          <div className="flex items-center">
+        <header className="absolute w-full h-[220px] top-0 left-0 bg-white shadow-[0px_4px_4px_#00000040] opacity-70 flex flex-row items-center px-8" style={{ width: '100vw' }}>
+          <div className="flex flex-row items-center justify-start space-x-8 w-[250px] flex-shrink-0">
             <img
-              className="w-[117px] h-[117px] object-cover"
-             alt="Ph seal Imus"
-             src="/Ph_seal_Imus copy.png"
+              className="w-[90px] h-[90px] object-cover"
+              alt="Ph seal Imus"
+              src="/Ph_seal_Imus copy.png"
             />
             <img
-              className="w-[132px] h-[132px] ml-2 object-cover"
-             alt="Imus logo"
-             src="/20250625_092038 copy.jpg"
+              className="w-[100px] h-[100px] object-cover"
+              alt="Imus logo"
+              src="/20250625_092038 copy.jpg"
             />
             <img
-              className="w-[117px] h-[117px] ml-2 object-cover"
-             alt="Hospital logo"
-             src="/20250625_092019 copy.jpg"
+              className="w-[90px] h-[90px] object-cover"
+              alt="Hospital logo"
+              src="/20250625_092019 copy.jpg"
             />
           </div>
-
-          <div className="flex-1 flex flex-col items-center justify-center">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-auto">
             <h1 className="font-black text-[#0d07c0] text-[52px] font-['Inter',Helvetica] text-center">
               OSPITAL NG IMUS
             </h1>
