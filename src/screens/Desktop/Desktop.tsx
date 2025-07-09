@@ -123,7 +123,7 @@ export const Desktop = (): JSX.Element => {
         </header>
 
         {/* Welcome text */}
-        <div className="absolute w-full max-w-[555px] top-[233px] left-1/2 -translate-x-1/2 text-center px-4">
+        <div className="absolute w-full top-[233px] left-0 right-0 flex justify-center px-4">
           <h2 className="font-medium text-white text-[48px] xl:text-[64px] font-['Inter',Helvetica]" style={{
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
           }}>
