@@ -97,18 +97,18 @@ export const Desktop = (): JSX.Element => {
           <div className="flex items-center ml-10">
             <img
               className="w-[117px] h-[117px] object-cover"
-              alt="Lungsod ng Imus"
-              src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=117&h=117&fit=crop"
+             alt="Ph seal Imus"
+             src="/Ph_seal_Imus copy.png"
             />
             <img
               className="w-[132px] h-[132px] ml-2 object-cover"
-              alt="City of Imus"
-              src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=132&h=132&fit=crop"
+             alt="Imus logo"
+             src="/20250625_092038 copy.jpg"
             />
             <img
               className="w-[117px] h-[117px] ml-2 object-cover"
-              alt="Ospital ng Imus"
-              src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=117&h=117&fit=crop"
+             alt="Hospital logo"
+             src="/20250625_092019 copy.jpg"
             />
           </div>
 
