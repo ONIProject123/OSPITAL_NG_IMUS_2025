@@ -87,9 +87,9 @@ export const Desktop = (): JSX.Element => {
       <div className="overflow-hidden w-full min-w-[1280px] max-w-[1920px] relative">
         {/* Background image */}
         <img
-          className="absolute w-full h-full top-0 left-0 object-cover opacity-80"
+          className="absolute w-full h-full top-0 left-0 object-cover opacity-80 blur-sm"
           alt="Hospital building"
-          src="/20250709_084103.jpg"
+          src="/files_5995405-1752027187084-20250709_084103.jpg"
         />
 
         {/* Header */}
