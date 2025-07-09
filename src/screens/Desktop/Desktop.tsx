@@ -83,17 +83,25 @@ export const Desktop = (): JSX.Element => {
   ];
 
   return (
-    <div className="w-full h-screen overflow-hidden relative" style={{ width: '1280px', height: '1920px' }}>
+    <div className="w-screen h-screen overflow-hidden relative m-0 p-0" style={{ 
+      width: '100vw', 
+      height: '100vh',
+      minWidth: '100vw',
+      minHeight: '100vh',
+      maxWidth: '100vw',
+      maxHeight: '100vh'
+    }}>
       <div className="w-full h-full relative">
         {/* Background image */}
         <img
           className="absolute w-full h-full top-0 left-0 object-cover object-center"
+          style={{ width: '100vw', height: '100vh' }}
           alt="Hospital building"
           src="/image copy.png"
         />
 
         {/* Header */}
-        <header className="absolute w-full h-[188px] top-0 left-0 bg-white shadow-[0px_4px_4px_#00000040] opacity-70 flex items-center px-8">
+        <header className="absolute w-full h-[188px] top-0 left-0 bg-white shadow-[0px_4px_4px_#00000040] opacity-70 flex items-center px-8" style={{ width: '100vw' }}>
           <div className="flex items-center">
             <img
               className="w-[117px] h-[117px] object-cover"
@@ -132,7 +140,10 @@ export const Desktop = (): JSX.Element => {
         </div>
 
         {/* Main form card */}
-        <Card className="absolute w-[1200px] min-h-[788px] top-[363px] left-1/2 -translate-x-1/2 bg-white rounded-[20px] shadow-[0px_4px_4px_#00000040] opacity-80">
+        <Card className="absolute min-h-[788px] top-[363px] left-1/2 -translate-x-1/2 bg-white rounded-[20px] shadow-[0px_4px_4px_#00000040] opacity-80" style={{ 
+          width: 'calc(100vw - 80px)',
+          maxWidth: '1200px'
+        }}>
           <CardContent className="p-8">
             <h3 className="font-medium text-[#858585] text-[28px] font-['Inter',Helvetica] mb-8">
               Enter your information to check your Patient ID:

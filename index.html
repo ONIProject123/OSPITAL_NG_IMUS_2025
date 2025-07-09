@@ -7,13 +7,18 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 100vw; height: 100vh; overflow: hidden; }
+      #app { width: 100vw; height: 100vh; overflow: hidden; }
+    </style>
+    <style>
       @import url("https://fonts.googleapis.com/css?family=Inter:500,900|Libre+Bodoni:400,italic|Konkhmer+Sleokchher:400");
     </style>
     <link href="tailwind.css" rel="stylesheet" />
     <link href="tailwind.css" rel="stylesheet" />
   </head>
-  <body>
-    <div id="app"></div>
+  <body style="margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden;">
+    <div id="app" style="margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden;"></div>
     <script type="module" src="./src/index.tsx"></script>
   </body>
 </html>
