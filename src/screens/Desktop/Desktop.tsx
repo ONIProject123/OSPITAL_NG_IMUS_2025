@@ -61,12 +61,12 @@ export const Desktop = (): JSX.Element => {
         </div>
 
         {/* Main form card */}
-        <Card className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/90 rounded-[20px] shadow-[0px_4px_4px_#00000040] backdrop-blur-sm" style={{ 
+        <Card className="absolute top-[250px] left-1/2 -translate-x-1/2 bg-white/90 rounded-[20px] shadow-[0px_4px_4px_#00000040] backdrop-blur-sm" style={{ 
           width: '500px',
           padding: '40px'
         }}>
           <CardContent className="p-0">
-            <h3 className="font-medium text-[#666666] text-[18px] font-['Inter',Helvetica] mb-8 text-center">
+            <h3 className="font-medium text-[#666666] text-[18px] font-['Inter',Helvetica] mb-8 text-center whitespace-nowrap">
               Enter your information to check your Patient Record:
             </h3>
 
