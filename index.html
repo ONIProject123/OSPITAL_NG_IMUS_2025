@@ -20,5 +20,34 @@
   <body style="margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden;">
     <div id="app" style="margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden;"></div>
     <script type="module" src="./src/index.tsx"></script>
-  </body>
+    <!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Information Search</title>
+</head>
+<body>
+  <!-- Your form goes here -->
+  <form action="search_patient.php" method="POST">
+    <input type="text" name="patient_id" placeholder="Patient ID No." required>
+    <input type="text" name="lastname" placeholder="Last Name" required>
+    <input type="text" name="firstname" placeholder="First Name" required>
+    <input type="text" name="middlename" placeholder="Middle Name">
+    <input type="text" name="suffix" placeholder="Suffix">
+    <input type="date" name="birthday" required>
+    <input type="number" name="age" placeholder="Age" required>
+    <select name="sex" required>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    <input type="text" name="contact_no" placeholder="Contact No." required>
+    <input type="text" name="civil_status" placeholder="Civil Status" required>
+    <textarea name="address" placeholder="Address" required></textarea>
+    <input type="text" name="phic_no" placeholder="PHIC No.">
+    <input type="text" name="contact_person" placeholder="Contact Person" required>
+    <input type="text" name="contact_person_no" placeholder="Contact Person No." required>
+    <button type="submit">Search</button>
+  </form>
+</body>
 </html>
