@@ -3,13 +3,37 @@ import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
 import { Search, Building2, ChevronDown, ChevronUp } from "lucide-react";
+import { FloorDirectory } from "../FloorDirectory";
 
-export const Desktop = (): JSX.Element => {
+interface DesktopProps {
+  currentView?: string;
+  onNavigate?: (view: string) => void;
+}
+
+export const Desktop = ({ currentView = 'main', onNavigate }: DesktopProps): JSX.Element => {
   const [isFloorDropdownOpen, setIsFloorDropdownOpen] = useState(false);
 
   const toggleFloorDropdown = () => {
     setIsFloorDropdownOpen(!isFloorDropdownOpen);
   };
+
+  const handleFloorNavigation = (floor: string) => {
+    if (onNavigate) {
+      onNavigate(floor);
+    }
+    setIsFloorDropdownOpen(false);
+  };
+
+  const handleBackToMain = () => {
+    if (onNavigate) {
+      onNavigate('main');
+    }
+  };
+
+  // Show floor directory if not on main view
+  if (currentView !== 'main') {
+    return <FloorDirectory floor={currentView} onBack={handleBackToMain} />;
+  }
 
   return (
     <div className="w-screen h-screen overflow-hidden relative m-0 p-0" style={{ 
@@ -89,16 +113,19 @@ export const Desktop = (): JSX.Element => {
             {isFloorDropdownOpen && (
               <div className="absolute top-[52px] left-0 w-full bg-white border border-gray-300 rounded-[8px] shadow-lg z-20">
                 <Button 
+                  onClick={() => handleFloorNavigation('ground')}
                   className="w-full h-[40px] bg-transparent hover:bg-gray-50 text-gray-700 border-none rounded-none flex items-center justify-start px-4 text-[14px]"
                 >
                   Ground Floor
                 </Button>
                 <Button 
+                  onClick={() => handleFloorNavigation('2nd')}
                   className="w-full h-[40px] bg-transparent hover:bg-gray-50 text-gray-700 border-none rounded-none flex items-center justify-start px-4 text-[14px]"
                 >
                   2nd Floor
                 </Button>
                 <Button 
+                  onClick={() => handleFloorNavigation('3rd')}
                   className="w-full h-[40px] bg-transparent hover:bg-gray-50 text-gray-700 border-none rounded-none rounded-b-[8px] flex items-center justify-start px-4 text-[14px]"
                 >
                   3rd Floor
