@@ -4,84 +4,6 @@ import { Card, CardContent } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
 
 export const Desktop = (): JSX.Element => {
-  // Form field data for mapping
-  const formFields = [
-    {
-      id: "patientId",
-      label: "Patient's ID No.:",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    {
-      id: "lastname",
-      label: "Lastname:",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    {
-      id: "firstname",
-      label: "Firstname:",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    {
-      id: "middlename",
-      label: "Middlename:",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    {
-      id: "suffix",
-      label: "Suffix: (Optional)",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    { id: "age", label: "Age:", gridArea: "col-span-1", className: "w-full" },
-    { id: "sex", label: "Sex:", gridArea: "col-span-1", className: "w-full" },
-    {
-      id: "dob",
-      label: "Date of Birth:",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    {
-      id: "civilStatus",
-      label: "Civil Status:",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    {
-      id: "phicNo",
-      label: "PHIC No.: (Optional)",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    {
-      id: "contactNo",
-      label: "Contact No.:",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    {
-      id: "address",
-      label: "Address:",
-      gridArea: "col-span-full",
-      className: "w-full",
-    },
-    {
-      id: "contactPerson",
-      label: "Contact Person:",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-    {
-      id: "contactPersonNo",
-      label: "Contact Person No.:",
-      gridArea: "col-span-1",
-      className: "w-full",
-    },
-  ];
-
   return (
     <div className="w-screen h-screen overflow-hidden relative m-0 p-0" style={{ 
       width: '100vw', 
@@ -101,164 +23,103 @@ export const Desktop = (): JSX.Element => {
         />
 
         {/* Header */}
-        <header className="absolute w-full h-[220px] top-0 left-0 bg-white shadow-[0px_4px_4px_#00000040] opacity-70 flex flex-row items-center px-8" style={{ width: '100vw' }}>
-          <div className="flex flex-row items-center justify-start space-x-8 w-[250px] flex-shrink-0">
+        <header className="absolute w-full h-[120px] top-0 left-0 bg-white shadow-[0px_4px_4px_#00000040] flex flex-row items-center px-8" style={{ width: '100vw' }}>
+          <div className="flex flex-row items-center justify-start space-x-6 w-[200px] flex-shrink-0">
             <img
-              className="w-[90px] h-[90px] object-cover"
+              className="w-[70px] h-[70px] object-cover"
               alt="Ph seal Imus"
               src="/Ph_seal_Imus copy.png"
             />
             <img
-              className="w-[100px] h-[100px] object-cover"
+              className="w-[70px] h-[70px] object-cover"
               alt="Imus logo"
               src="/20250625_092038 copy.jpg"
             />
             <img
-              className="w-[90px] h-[90px] object-cover"
+              className="w-[70px] h-[70px] object-cover"
               alt="Hospital logo"
               src="/20250625_092019 copy.jpg"
             />
           </div>
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-auto">
-            <h1 className="font-black text-[#0d07c0] text-[52px] font-['Inter',Helvetica] text-center">
+            <h1 className="font-black text-[#0d07c0] text-[36px] font-['Inter',Helvetica] text-center">
               OSPITAL NG IMUS
             </h1>
-            <p className="font-normal italic text-[#006f07] text-[28px] font-['Libre_Bodoni',Helvetica] text-center">
+            <p className="font-normal italic text-[#006f07] text-[18px] font-['Libre_Bodoni',Helvetica] text-center">
               We serve, We Care
             </p>
           </div>
         </header>
 
         {/* Welcome text */}
-        <div className="absolute w-full top-[233px] left-0 right-0 flex justify-center px-4">
-          <h2 className="font-medium text-white text-[56px] font-['Inter',Helvetica]" style={{
+        <div className="absolute w-full top-[140px] left-0 right-0 flex justify-center px-4">
+          <h2 className="font-medium text-white text-[48px] font-['Inter',Helvetica]" style={{
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
           }}>
-            Welcome to ONI!
+            Welcome to Ospital ng Imus!
           </h2>
         </div>
 
         {/* Main form card */}
-        <Card className="absolute min-h-[788px] top-[363px] left-1/2 -translate-x-1/2 bg-white rounded-[20px] shadow-[0px_4px_4px_#00000040] opacity-80" style={{ 
-          width: 'calc(100vw - 80px)',
-          maxWidth: '1200px'
+        <Card className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/90 rounded-[20px] shadow-[0px_4px_4px_#00000040] backdrop-blur-sm" style={{ 
+          width: '500px',
+          padding: '40px'
         }}>
-          <CardContent className="p-8">
-            <h3 className="font-medium text-[#858585] text-[28px] font-['Inter',Helvetica] mb-8">
-              Enter your information to check your Patient ID:
+          <CardContent className="p-0">
+            <h3 className="font-medium text-[#666666] text-[18px] font-['Inter',Helvetica] mb-8 text-center">
+              Enter your information to check your Patient Record:
             </h3>
 
             {/* Form layout */}
-            <div className="grid grid-cols-4 gap-6">
+            <div className="space-y-4">
               {/* Patient ID */}
-              <div className="col-span-1">
+              <div>
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Patient's ID No."
+                  className="h-[50px] rounded-[8px] border border-solid border-gray-300 text-base placeholder:text-gray-500"
+                  placeholder="Patient's ID No.:"
                 />
               </div>
 
-              {/* Empty space for layout */}
-              <div className="col-span-3"></div>
-
-              {/* Name fields row */}
-              <div className="col-span-1">
+              {/* Lastname */}
+              <div>
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Lastname"
-                />
-              </div>
-              <div className="col-span-1">
-                <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Firstname"
-                />
-              </div>
-              <div className="col-span-1">
-                <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Middlename"
-                />
-              </div>
-              <div className="col-span-1">
-                <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Suffix"
+                  className="h-[50px] rounded-[8px] border border-solid border-gray-300 text-base placeholder:text-gray-500"
+                  placeholder="Lastname:"
                 />
               </div>
 
-              {/* Personal details row */}
-              <div className="col-span-1">
+              {/* Firstname */}
+              <div>
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Age"
-                />
-              </div>
-              <div className="col-span-1">
-                <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Sex"
-                />
-              </div>
-              <div className="col-span-1">
-                <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Date of Birth"
-                />
-              </div>
-              <div className="col-span-1">
-                <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Civil Status"
+                  className="h-[50px] rounded-[8px] border border-solid border-gray-300 text-base placeholder:text-gray-500"
+                  placeholder="Firstname:"
                 />
               </div>
 
-              {/* Contact info row */}
-              <div className="col-span-2">
+              {/* Middlename and Suffix row */}
+              <div className="grid grid-cols-2 gap-4">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="PHIC No."
+                  className="h-[50px] rounded-[8px] border border-solid border-gray-300 text-base placeholder:text-gray-500"
+                  placeholder="Middlename:"
                 />
-              </div>
-              <div className="col-span-2">
                 <Input
-                  className="h-[73px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Contact No."
-                />
-              </div>
-
-              {/* Address row */}
-              <div className="col-span-4">
-                <Input
-                  className="h-[71px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Address"
+                  className="h-[50px] rounded-[8px] border border-solid border-gray-300 text-base placeholder:text-gray-500 placeholder:text-sm"
+                  placeholder="Suffix: (Jr, III)"
                 />
               </div>
 
-              {/* Emergency contact row */}
-              <div className="col-span-2">
+              {/* Date of Birth */}
+              <div>
                 <Input
-                  className="h-[71px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Contact Person"
-                />
-              </div>
-              <div className="col-span-2">
-                <Input
-                  className="h-[71px] rounded-[10px] border border-solid border-black text-base placeholder:text-2xl"
-                  placeholder="Contact Person No."
+                  className="h-[50px] rounded-[8px] border border-solid border-gray-300 text-base placeholder:text-gray-500"
+                  placeholder="Date of Birth:"
                 />
               </div>
 
-              {/* Action buttons */}
-              <div className="col-span-1 mt-4">
-                <Button className="w-full h-[56px] xl:h-[68px] bg-[#0f1ca9] rounded-[20px] text-white text-[24px] xl:text-[40px] font-['Konkhmer_Sleokchher',Helvetica]">
+              {/* Search button */}
+              <div className="pt-4">
+                <Button className="w-full h-[50px] bg-[#1e40af] hover:bg-[#1d4ed8] rounded-[8px] text-white text-[18px] font-medium">
                   Search
-                </Button>
-              </div>
-              <div className="col-span-2"></div>
-              <div className="col-span-1 mt-4">
-                <Button className="w-full min-w-[220px] h-auto px-8 py-4 bg-[#0f914a] rounded-[20px] text-white text-[20px] xl:text-[28px] font-['Konkhmer_Sleokchher',Helvetica] flex items-center justify-center whitespace-normal text-center">
-                  Set Appointment
                 </Button>
               </div>
             </div>
