@@ -67,6 +67,7 @@ export const Desktop = (): JSX.Element => {
         }}>
           <CardContent className="p-0">
             <h3 className="font-medium text-[#666666] text-[18px] font-['Inter',Helvetica] mb-8 text-center whitespace-nowrap">
+            <h3 className="font-medium text-[#666666] text-[16px] font-['Inter',Helvetica] mb-8 text-center whitespace-nowrap">
               Enter your information to check your Patient Record:
             </h3>
 
